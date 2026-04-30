@@ -19,10 +19,12 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
+      <button class="dark-toggle">Dark Mode</button>
     </nav>
     <nav id="hamburger-nav">
       <div class="logo">Ram Reddy</div>
       <div class="hamburger-menu">
+        <button class="dark-toggle">Dark Mode</button>
         <div class="hamburger-icon" onclick="toggleMenu()">
           <span></span>
           <span></span>
@@ -38,7 +40,7 @@
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/portfolio_pic2.jpg" style="border-radius: 50%;" alt="John Doe profile picture" />
+        <img src="./assets/portfolio_pic2.jpg" style="border-radius: 50%;" alt="Ram Reddy profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
@@ -71,7 +73,7 @@
         </div>
       </div>
     </section>
-    <section id="about">
+    <section id="about" class="fade-in">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
@@ -118,7 +120,7 @@
         onclick="location.href='./#experience'"
       />
     </section>
-    <section id="experience">
+    <section id="experience" class="fade-in">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
       <div class="experience-details-container">
@@ -253,7 +255,7 @@
         onclick="location.href='./#projects'"
       />
     </section>
-    <section id="projects">
+    <section id="projects" class="fade-in">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
@@ -274,12 +276,6 @@
               >
                 Github
               </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
-              </button>
             </div>
           </div>
           <div class="details-container color-container">
@@ -294,15 +290,9 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/RamReddymanda'"
               >
                 Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
               </button>
             </div>
           </div>
@@ -314,19 +304,13 @@
                 class="project-img"
               />
             </div>
-            <h2 class="experience-sub-title project-title">Booking application</h2>
+            <h2 class="experience-sub-title project-title">Booking Application</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="location.href='https://github.com/RamReddymanda'"
               >
                 Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
-              >
-                Live Demo
               </button>
             </div>
           </div>
@@ -339,7 +323,7 @@
         onclick="location.href='./#contact'"
       />
     </section>
-    <section id="contact">
+    <section id="contact" class="fade-in">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
@@ -349,7 +333,7 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:examplemail@gmail.com">ramreddymandha87@gmail.com</a></p>
+          <p><a href="mailto:ramreddymandha87@gmail.com">ramreddymandha87@gmail.com</a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -357,7 +341,7 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          <p><a href="https://www.linkedin.com/in/ram-reddy-a6a25325a/">LinkedIn</a></p>
         </div>
       </div>
     </section>
@@ -374,6 +358,7 @@
       </nav>
       <p>Copyright &#169; 2025 Ram Reddy. All Rights Reserved.</p>
     </footer>
-    <script src="script.js"></script>
+    <button id="scroll-top-btn" title="Back to top">&#8593;</button>
+    <script src="scripts.js"></script>
   </body>
 </html>
