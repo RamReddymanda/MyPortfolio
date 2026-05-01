@@ -267,12 +267,14 @@ section {
   height: 96vh;
   margin: 0 10rem;
   min-height: fit-content;
+  scroll-margin-top: var(--nav-height);
 }
 
 .section-container {
   display: flex;
   gap: 4rem;
-  height: 80%;
+  height: auto;
+  min-height: 60%;
 }
 
 /* PROFILE SECTION */
@@ -907,6 +909,8 @@ section {
   color: var(--text-primary);
   font-weight: 500;
   margin: 0.1rem 0 0;
+  overflow-wrap: break-word;
+  word-break: break-all;
 }
 
 /* FOOTER */
