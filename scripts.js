@@ -53,6 +53,27 @@ const fadeObserver = new IntersectionObserver(
 
 document.querySelectorAll(".fade-in").forEach((el) => fadeObserver.observe(el));
 
+// Stagger children animation
+const staggerObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const children = entry.target.querySelectorAll(".stagger-child");
+        children.forEach((child, i) => {
+          child.style.transitionDelay = `${i * 80}ms`;
+          child.classList.add("visible");
+        });
+        staggerObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.1 }
+);
+
+document
+  .querySelectorAll(".about-containers, .experience-details-container")
+  .forEach((el) => staggerObserver.observe(el));
+
 // Dark mode toggle
 const darkToggles = document.querySelectorAll(".dark-toggle");
 
@@ -71,3 +92,31 @@ darkToggles.forEach((btn) => {
     applyDark(!document.body.classList.contains("dark"));
   });
 });
+
+// Typing animation
+const roles = ["ML Engineer", "Web Developer", "AI Enthusiast", "Deep Learning Researcher"];
+let roleIdx = 0, charIdx = 0, isDeleting = false;
+const typedEl = document.getElementById("typed-role");
+
+function typeRole() {
+  if (!typedEl) return;
+  const current = roles[roleIdx];
+  typedEl.textContent = isDeleting
+    ? current.slice(0, charIdx--)
+    : current.slice(0, charIdx++);
+
+  if (!isDeleting && charIdx > current.length) {
+    isDeleting = true;
+    setTimeout(typeRole, 1800);
+    return;
+  }
+  if (isDeleting && charIdx < 0) {
+    isDeleting = false;
+    roleIdx = (roleIdx + 1) % roles.length;
+    setTimeout(typeRole, 400);
+    return;
+  }
+  setTimeout(typeRole, isDeleting ? 60 : 100);
+}
+
+typeRole();

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Ram Reddy Mandha — Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
@@ -40,17 +40,14 @@
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/portfolio_pic2.jpg" style="border-radius: 50%;" alt="Ram Reddy profile picture" />
+        <img src="./assets/portfolio_pic2.jpg" alt="Ram Reddy profile picture" />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Ram Reddy Mandha</h1>
-        <p class="section__text__p2">ML Engineer and Web Developer </p>        
+        <p class="section__text__p2"><span id="typed-role"></span></p>
         <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/RAM%20REDDY%20MANDHA.pdf')"
-          >
+          <button class="btn btn-color-2" onclick="window.open('./assets/RAM%20REDDY%20MANDHA.pdf')">
             Resume
           </button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
@@ -58,18 +55,17 @@
           </button>
         </div>
         <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/ram-reddy-a6a25325a/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/RamReddymanda'"
-          />
+          <a href="https://www.linkedin.com/in/ram-reddy-a6a25325a/" target="_blank" class="social-link" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+          <a href="https://github.com/RamReddymanda" target="_blank" class="social-link" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+            </svg>
+          </a>
         </div>
       </div>
     </section>
@@ -78,47 +74,43 @@
       <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="section__pic-container">
-          <img
-            src="./assets/portfolio_pic1.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
+          <img src="./assets/portfolio_pic1.jpg" alt="Profile picture" class="about-pic" />
         </div>
         <div class="about-details-container">
           <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
+            <div class="details-container stagger-child">
+              <div class="detail-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                  <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/>
+                </svg>
+              </div>
               <h3>Experience</h3>
-              <p>Intership at NIT Watangal on <br />Text analysis & DL</p>
+              <p>Internship at NIT Warangal<br />Text Analysis &amp; Deep Learning</p>
             </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
+            <div class="details-container stagger-child">
+              <div class="detail-icon-wrapper">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                </svg>
+              </div>
               <h3>Education</h3>
-              <p>B.tech. Bachelors Degree<br />CSE-Ai & ML</p>
+              <p>B.Tech. Bachelor's Degree<br />CSE — AI &amp; ML</p>
             </div>
           </div>
           <div class="text-container">
             <p>
-              I am an aspiring Machine Learning, Artificial Intelligence, and Web Developer currently pursuing a Bachelor’s degree in Computer Science and Engineering (AI & ML). With a strong passion for technology, I have gained hands-on experience in deep learning and full-stack development through various projects and an enriching internship at NIT Warangal. I enjoy working on innovative solutions, from building AI models to developing web applications, and continuously strive to expand my knowledge. My ability to adapt, learn, and work independently has helped me excel in problem-solving and research. I am driven by curiosity and a desire to contribute to cutting-edge advancements in AI, software development, and data science.
-
+              I am an aspiring Machine Learning, Artificial Intelligence, and Web Developer currently pursuing a Bachelor's degree in Computer Science and Engineering (AI &amp; ML). With a strong passion for technology, I have gained hands-on experience in deep learning and full-stack development through various projects and an enriching internship at NIT Warangal. I enjoy working on innovative solutions, from building AI models to developing web applications, and continuously strive to expand my knowledge. My ability to adapt, learn, and work independently has helped me excel in problem-solving and research. I am driven by curiosity and a desire to contribute to cutting-edge advancements in AI, software development, and data science.
             </p>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
+      <button class="section-arrow" onclick="location.href='./#experience'" aria-label="Next section">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </button>
     </section>
     <section id="experience" class="fade-in">
       <p class="section__text__p1">Explore My</p>
@@ -128,235 +120,178 @@
           <div class="details-container">
             <h2 class="experience-sub-title">Web Development</h2>
             <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experienced</p>
-                </div>
+              <article class="skill-badge stagger-child">
+                <span class="skill-name">HTML</span>
+                <span class="skill-level skill-level--experienced">Experienced</span>
               </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experienced</p>
-                </div>
+              <article class="skill-badge stagger-child">
+                <span class="skill-name">CSS</span>
+                <span class="skill-level skill-level--experienced">Experienced</span>
               </article>
-             
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Basic</p>
-                </div>
+              <article class="skill-badge stagger-child">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-level skill-level--basic">Basic</span>
               </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Node Js </h3>
-                  <p>Intermediate</p>
-                </div>
+              <article class="skill-badge stagger-child">
+                <span class="skill-name">Node.js</span>
+                <span class="skill-level skill-level--intermediate">Intermediate</span>
               </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>React Js</h3>
-                  <p>Intermediate</p>
-                </div>
+              <article class="skill-badge stagger-child">
+                <span class="skill-name">React.js</span>
+                <span class="skill-level skill-level--intermediate">Intermediate</span>
               </article>
             </div>
           </div>
           <div class="details-container">
             <h2 class="experience-sub-title">Data Science</h2>
             <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MySQL   </h3>
-                  <p>Basic</p>
-                </div>
+              <article class="skill-badge stagger-child">
+                <span class="skill-name">MySQL</span>
+                <span class="skill-level skill-level--basic">Basic</span>
               </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MachineLearning</h3>
-                  <p>Intermediate</p>
-                </div>
+              <article class="skill-badge stagger-child">
+                <span class="skill-name">Machine Learning</span>
+                <span class="skill-level skill-level--intermediate">Intermediate</span>
               </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>DeepLearning</h3>
-                  <p>Intermediate</p>
-                </div>
+              <article class="skill-badge stagger-child">
+                <span class="skill-name">Deep Learning</span>
+                <span class="skill-level skill-level--intermediate">Intermediate</span>
               </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PowerBI tool</h3>
-                  <p>Intermediate</p>
-                </div>
+              <article class="skill-badge stagger-child">
+                <span class="skill-name">Power BI</span>
+                <span class="skill-level skill-level--intermediate">Intermediate</span>
               </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Advanced</p>
-                </div>
+              <article class="skill-badge stagger-child">
+                <span class="skill-name">Python</span>
+                <span class="skill-level skill-level--advanced">Advanced</span>
               </article>
             </div>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
+      <button class="section-arrow" onclick="location.href='./#projects'" aria-label="Next section">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </button>
     </section>
     <section id="projects" class="fade-in">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/car1.jpeg"
-                alt="Project 1"
-                class="project-img"
-              />
+          <div class="details-container color-container stagger-child">
+            <div class="project-img-wrapper">
+              <img src="./assets/car1.jpeg" alt="Car Price Prediction" class="project-img" />
+              <div class="project-overlay">
+                <p>A machine learning model that predicts used car prices based on features like age, mileage, and brand.</p>
+              </div>
             </div>
             <h2 class="experience-sub-title project-title">Car Price Prediction</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/RamReddymanda/used_car_price_detection'"
-              >
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/RamReddymanda/used_car_price_detection'">
                 Github
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
+          <div class="details-container color-container stagger-child">
+            <div class="project-img-wrapper">
+              <img src="./assets/project-2.png" alt="Sarcasm Detection" class="project-img" />
+              <div class="project-overlay">
+                <p>An NLP model that detects sarcasm in text using deep learning techniques and natural language processing.</p>
+              </div>
             </div>
             <h2 class="experience-sub-title project-title">Sarcasm Detection</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/RamReddymanda'"
-              >
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/RamReddymanda'">
                 Github
               </button>
             </div>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
+          <div class="details-container color-container stagger-child">
+            <div class="project-img-wrapper">
+              <img src="./assets/project-3.png" alt="Booking Application" class="project-img" />
+              <div class="project-overlay">
+                <p>A full-stack booking application with user authentication, reservation management, and real-time availability.</p>
+              </div>
             </div>
             <h2 class="experience-sub-title project-title">Booking Application</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/RamReddymanda'"
-              >
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/RamReddymanda'">
                 Github
               </button>
             </div>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
+      <button class="section-arrow" onclick="location.href='./#contact'" aria-label="Next section">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </button>
     </section>
     <section id="contact" class="fade-in">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
+      <p class="contact-subtitle">Open to opportunities, collaborations, and conversations.</p>
       <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:ramreddymandha87@gmail.com">ramreddymandha87@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/ram-reddy-a6a25325a/">LinkedIn</a></p>
-        </div>
+        <a href="mailto:ramreddymandha87@gmail.com" class="contact-info-container">
+          <div class="contact-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,12 2,6"/>
+            </svg>
+          </div>
+          <div>
+            <p class="contact-label">Email</p>
+            <p class="contact-value">ramreddymandha87@gmail.com</p>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/ram-reddy-a6a25325a/" target="_blank" class="contact-info-container">
+          <div class="contact-icon-wrapper">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </div>
+          <div>
+            <p class="contact-label">LinkedIn</p>
+            <p class="contact-value">ram-reddy-a6a25325a</p>
+          </div>
+        </a>
       </div>
     </section>
     <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo">Ram Reddy</span>
+          <p>ML Engineer &amp; Web Developer</p>
+        </div>
+        <nav>
+          <ul class="nav-links footer-nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
+        </nav>
+        <div class="footer-socials">
+          <a href="https://www.linkedin.com/in/ram-reddy-a6a25325a/" target="_blank" class="social-link" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </a>
+          <a href="https://github.com/RamReddymanda" target="_blank" class="social-link" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/>
+            </svg>
+          </a>
         </div>
-      </nav>
-      <p>Copyright &#169; 2025 Ram Reddy. All Rights Reserved.</p>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright &#169; 2025 Ram Reddy Mandha. All Rights Reserved.</p>
+      </div>
     </footer>
     <button id="scroll-top-btn" title="Back to top">&#8593;</button>
     <script src="scripts.js"></script>
